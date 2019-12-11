@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Toughdude List</title>
     <meta charset="UTF-8"/>
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">#}
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="{% static 'css/sample.css' %}" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -19,12 +20,18 @@
         </ul>
     </div>
 </nav>
-<div class="container">
+{#<div class="container">#}
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">#}
+{#    {% block content %}#}
+{#    {% endblock content %}#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>#}
+{#</div>#}
+<div class="body1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 
+    <button class="btn" onclick="window.location.href = 'http://toughdudelist.herokuapp.com/new_search';"> Navigate to search </button>
     {% block content %}
-
     {% endblock content %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </div>
 </body>
 </html>
