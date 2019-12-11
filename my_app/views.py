@@ -23,8 +23,6 @@ def new_search(request):
     print(quote_plus(search_string))
     final_url = BASE_CRAIGSLIST_URL.format(quote_plus(search_string))
     print(final_url)
-    temp_search = models.Search.objects.create(search=search_string)
-    temp_search.save()
     # url = "https://losangeles.craigslist.org/search/sss?query=beauty&sort=rel"
     response = requests.get(final_url)
 
